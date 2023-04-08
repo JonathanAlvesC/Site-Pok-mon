@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Registro do Pokémon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link href="../CSS/index.css" rel="stylesheet" type="text/css">
+  <style>body{background-image:url(../IMAGEM/BACKGROUND/15.png)}</style>
+</head>
+<body>
+  <div class="container" >
+    <a class="links" id="paracadastro"></a>
+    <a class="links" id="paralogin"></a>
+     
+    <div class="content">      
+      
+      <!--FORMULÁRIO DE CADASTRO-->
+      <div id="cadastro">
+        <form method="post" action=""> 
+          <h1>Cadastro</h1> 
+           
+          <p> 
+            <label for="nome_pok">Nome do Pokémon</label>
+            <input id="nome_pok" name="nome_pok" required="required" type="text"/>
+          </p>
+           
+          <p> 
+            <label for="data_cap">Data da Captura</label>
+            <input id="data_cap" name="data_cap" required="required" type="date"/> 
+          </p>
+           
+          <p> 
+            <label for="pokebolas">Usou quantas pokebolas?</label>
+            <input id="pokebolas" name="pokebolas" required="required" type="number"/>
+          </p>
+
+        <label for="tipo">Tipo</label></br>
+        <select id="tipo" name="tipo">
+        <option value=""></option>
+        <option value="normal">Normal</option>
+        <option value="fogo">Fogo</option>
+        <option value="ar">Ar</option>
+        <option value="agua">Água</option>
+        <option value="planta">Planta</option>
+        <option value="eletrico">Elétrico</option>
+        <option value="gelo">Gelo</option>
+    </select>
+    </br></br> 
+
+    <p> 
+        <label for="obs">Alguma informação a acrescenar sobre a captura?</label>
+        <input id="obs" name="obs" required="required" type="text"/>
+      </p></br>
+           
+          <p> 
+            <input type="submit" value="Cadastrar"/> 
+          </p>
+           
+         
+        </form>
+      </div>
+    </div>
+  </div>  
+</body>
+</html>
